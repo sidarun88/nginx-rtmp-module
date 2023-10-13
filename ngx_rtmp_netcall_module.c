@@ -501,7 +501,7 @@ ngx_rtmp_netcall_http_format_request(ngx_int_t method, ngx_str_t *host,
     ngx_buf_t                      *b;
     size_t                          content_length;
     static const char              *methods[2] = { "GET", "POST" };
-    static const char               rq_tmpl[] = " HTTP/1.0\r\n"
+    static const char               rq_tmpl[] = " HTTP/1.1\r\n"
                                                 "Host: %V\r\n"
                                                 "Content-Type: %V\r\n"
                                                 "Connection: Close\r\n"
